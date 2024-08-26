@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="img/Vector.png" alt="logo" aria-label="Logo">
+    </header>
+
+    <main class="contenedor">
+        <section class="encriptador">
+            <h1>Encriptador</h1>
+            <label for="inputText" class="sr-only">Texto a encriptar</label>
+            <textarea id="inputText" placeholder="Ingresa tu texto aquí..." rows="6" aria-label="Área de texto para encriptar"></textarea>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="encryptText()" aria-label="Encriptar texto">Encriptar</button>
+                <button class="btn-desencriptar" onclick="decryptText()" aria-label="Desencriptar texto">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="resultado">
+            <h1>Resultado</h1>
+            <label for="outputText" class="sr-only">Texto encriptado o desencriptado</label>
+            <textarea id="outputText" placeholder="El resultado aparecerá aquí..." rows="6" readonly aria-label="Área de texto con el resultado"></textarea>
+            <button class="btn-copiar" onclick="copyToClipboard()" aria-label="Copiar texto al portapapeles">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cesar Raul Morales Ticona - Alumno de ALURA LATAM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
